@@ -1,15 +1,14 @@
 server:
   port: 8081
 
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/streaming_users
+    username: streaming
+    password: streaming123
+
 management:
   endpoints:
     web:
       exposure:
         include: health,info
-
-spring:
-  datasource:
-    # We'll fill this later
-
-  jpa:
-    # We'll fill this later
