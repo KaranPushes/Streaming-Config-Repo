@@ -8,8 +8,11 @@ spring:
     password: streaming123
 
   jpa:
+    properties:
+      jakarta.persistence.bean.manager: org.springframework.orm.jpa.support.ExecutingBeanManager
+
     hibernate:
-      ddl-auto: none
+      ddl-auto: validate
     open-in-view: false
 
   flyway:
