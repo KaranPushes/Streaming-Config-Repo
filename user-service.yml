@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+spring:
+  datasource:
+    # We'll fill this later
+
+  jpa:
+    # We'll fill this later
