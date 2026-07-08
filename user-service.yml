@@ -8,17 +8,16 @@ spring:
     password: streaming123
 
   jpa:
-    properties:
-      jakarta.persistence.bean.manager: org.springframework.orm.jpa.support.ExecutingBeanManager
-
     hibernate:
-      ddl-auto: validate
+      ddl-auto: none
     open-in-view: false
 
   flyway:
     enabled: true
     baseline-on-migrate: true
     baseline-version: 0
+    # Forces Flyway to validate that your database matches your migration files on boot
+    validate-on-migrate: true
 
 management:
   endpoints:
