@@ -6,6 +6,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/streaming_users
     username: streaming
     password: streaming123
+    jpa:
+      hibernate:
+        ddl-auto: validate
+      open-in-view: false
 
 management:
   endpoints:
