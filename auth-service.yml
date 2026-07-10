@@ -1,6 +1,13 @@
 server:
   port: 8082
 
+application:
+  security:
+    jwt:
+      secret-key: 5hY2L9nQ8xR1mP7vT4kD6sA0cF3jN8wZ5bX1eR9uM2pL7gH4yK6tV0qC
+      access-token-expiration: 15m
+      refresh-token-expiration: 7d
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/streaming_auth
