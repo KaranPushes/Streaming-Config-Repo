@@ -6,7 +6,7 @@ application:
     jwt:
       secret-key: KoNBlgUHCn24kEKj0ubb/GQebGqQjqOPDhTr/hICxbQ=
       access-token-expiration: 15m
-      refresh-token-expiration: 7d
+      refresh-token-expiration: 30d
 
 spring:
   datasource:
