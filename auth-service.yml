@@ -7,8 +7,12 @@ application:
       secret-key: KoNBlgUHCn24kEKj0ubb/GQebGqQjqOPDhTr/hICxbQ=
       access-token-expiration: 15m
       refresh-token-expiration: 30d
+    
     email-verification:
       expiration: 24h
+
+    password-reset:
+      expiration: 30m
 
 spring:
   datasource:
