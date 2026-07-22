@@ -38,6 +38,19 @@ spring:
   flyway:
     enabled: true
 
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: karanwork167@gmail.com
+    password: ynwk rcpg xyyf fnsz
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
 management:
   endpoints:
     web:
