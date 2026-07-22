@@ -56,3 +56,7 @@ management:
     web:
       exposure:
         include: health,info
+
+app:
+  frontend:
+    base-url: ${FRONTEND_BASE_URL:http://localhost:3000}
