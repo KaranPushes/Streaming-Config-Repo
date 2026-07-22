@@ -13,10 +13,16 @@ application:
 
     password-reset:
       expiration: 30m
-    
+
     account-lock:
       max-attempts: 5
       duration: 15m
+
+auth:
+  cleanup:
+    revoked-session-retention: 30d
+    verified-email-token-retention: 30d
+    used-password-reset-token-retention: 30d
 
 spring:
   datasource:
