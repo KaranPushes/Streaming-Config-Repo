@@ -16,6 +16,11 @@ spring:
     enabled: true
     locations: classpath:db/migration
 
+application:
+  security:
+    jwt:
+      secret-key: KoNBlgUHCn24kEKj0ubb/GQebGqQjqOPDhTr/hICxbQ=
+
 management:
   endpoints:
     web:
