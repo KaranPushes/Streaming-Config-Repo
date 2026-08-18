@@ -6,3 +6,8 @@ management:
     web:
       exposure:
         include: health,info
+
+application:
+  security:
+    jwt:
+      secret-key: KoNBlgUHCn24kEKj0ubb/GQebGqQjqOPDhTr/hICxbQ=
