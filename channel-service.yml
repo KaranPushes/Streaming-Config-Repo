@@ -1,0 +1,28 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/streaming_channels
+    username: streaming
+    password: streaming123
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+application:
+  security:
+    jwt:
+      secret-key: KoNBlgUHCn24kEKj0ubb/GQebGqQjqOPDhTr/hICxbQ=
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
