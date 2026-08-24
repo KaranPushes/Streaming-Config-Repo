@@ -28,3 +28,8 @@ spring:
               uri: lb://USER-SERVICE
               predicates:
                 - Path=/users/**
+
+            - id: channel-service
+              uri: lb://CHANNEL-SERVICE
+              predicates:
+                - Path=/channels/**
