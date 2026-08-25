@@ -18,7 +18,6 @@ spring:
       server:
         webmvc:
           routes:
-
             - id: auth-service
               uri: lb://AUTH-SERVICE
               predicates:
@@ -33,3 +32,8 @@ spring:
               uri: lb://CHANNEL-SERVICE
               predicates:
                 - Path=/channels/**
+
+            - id: follow-service
+              uri: lb://FOLLOW-SERVICE
+              predicates:
+                - Path=/follows/**
