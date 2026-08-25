@@ -1,0 +1,27 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/streaming_follows
+    username: streaming
+    password: streaming123
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    enabled: true
+
+application:
+  security:
+    jwt:
+      secret-key: KoNBlgUHCn24kEKj0ubb/GQebGqQjqOPDhTr/hICxbQ=
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
