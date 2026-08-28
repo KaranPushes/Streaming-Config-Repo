@@ -14,3 +14,15 @@ spring:
 
   flyway:
     enabled: true
+
+application:
+  media:
+    allowed-image-types:
+      - image/jpeg
+      - image/png
+      - image/webp
+
+    limits:
+      avatar-max-size: 5MB
+      banner-max-size: 10MB
+      stream-thumbnail-max-size: 10MB
