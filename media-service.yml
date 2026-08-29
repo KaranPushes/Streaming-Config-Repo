@@ -15,6 +15,11 @@ spring:
   flyway:
     enabled: true
 
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
 application:
   media:
     allowed-image-types:
@@ -26,3 +31,7 @@ application:
       avatar-max-size: 5MB
       banner-max-size: 10MB
       stream-thumbnail-max-size: 10MB
+
+  security:
+    jwt:
+      secret-key: KoNBlgUHCn24kEKj0ubb/GQebGqQjqOPDhTr/hICxbQ=
