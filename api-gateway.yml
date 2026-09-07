@@ -42,3 +42,8 @@ spring:
               uri: lb://MEDIA-SERVICE
               predicates:
                 - Path=/media/**
+
+            - id: stream-service
+              uri: lb://STREAM-SERVICE
+              predicates:
+                - Path=/streams/**
