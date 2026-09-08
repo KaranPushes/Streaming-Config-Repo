@@ -37,7 +37,7 @@ spring:
               uri: lb://FOLLOW-SERVICE
               predicates:
                 - Path=/follows/**
-            
+
             - id: media-service
               uri: lb://MEDIA-SERVICE
               predicates:
