@@ -21,6 +21,11 @@ application:
     jwt:
       secret-key: KoNBlgUHCn24kEKj0ubb/GQebGqQjqOPDhTr/hICxbQ=
 
+stream:
+  infrastructure:
+    media-mtx:
+      auth-secret: ${MEDIAMTX_AUTH_SECRET}
+
 management:
   endpoints:
     web:
