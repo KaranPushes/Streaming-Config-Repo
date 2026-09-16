@@ -2,6 +2,11 @@ server:
   port: 8087
 
 eureka:
+  instance:
+    hostname: host.docker.internal
+    prefer-ip-address: false
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+
   client:
     service-url:
       defaultZone: http://host.docker.internal:8761/eureka
