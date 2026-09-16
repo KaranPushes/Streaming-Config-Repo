@@ -3,9 +3,9 @@ server:
 
 eureka:
   instance:
-    hostname: host.docker.internal
+    hostname: localhost
     prefer-ip-address: false
-    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+    instance-id: TRANSCODER-SERVICE:8087
 
   client:
     service-url:
