@@ -47,3 +47,8 @@ spring:
               uri: lb://STREAM-SERVICE
               predicates:
                 - Path=/streams/**
+
+            - id: chat-service
+              uri: lb://CHAT-SERVICE
+              predicates:
+                - Path=/api/chat/**
