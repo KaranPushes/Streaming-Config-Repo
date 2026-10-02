@@ -57,3 +57,8 @@ spring:
               uri: lb://NOTIFICATION-SERVICE
               predicates:
                 - Path=/api/notifications/**
+
+            - id: feed-service
+              uri: lb://FEED-SERVICE
+              predicates:
+                - Path=/api/feed/**
